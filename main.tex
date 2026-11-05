@@ -1,0 +1,81 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}[\vspace{-0.4em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\projectHeading}[2]{\textbf{#1} \hfill \textit{#2}}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% ---------- Header ----------
+\begin{center}
+  {\Huge\bfseries ALEC ROSENBERG}\\[4pt]
+  {\small COMPUTER SCIENCE STUDENT \(\mid\) CYBERSECURITY}\\[2pt]
+  {\small Orlando, Florida \(\bullet\) 954-952-4983 \(\bullet\) \href{mailto:alecmrosenberg@gmail.com}{alecmrosenberg@gmail.com}
+  \(\bullet\) \href{https://www.linkedin.com/in/alecmrosenberg/}{LinkedIn} \(\bullet\) \href{https://github.com/alecrosenberg}{GitHub} \(\bullet\) \href{https://alecrosenberg.github.io/}{Website}}
+\end{center}
+
+% ---------- About Me ----------
+\section{About Me}
+\small
+Computer Science student at the University of Central Florida with a strong interest in cybersecurity and hands-on experience in Linux system administration, network defense, and Java development. Seeking an opportunity to apply technical skills and continue learning in a cybersecurity environment.
+
+% ---------- Education ----------
+\section{Education}
+\noindent
+\textbf{University of Central Florida} \hfill \textit{Aug 2024 -- May 2028}\\
+\textit{Bachelor of Science in Computer Science}\\[2pt]
+GPA: 3.33\\
+Activities: Hack@UCF
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+  \resumeItem{Placed 3rd out of 35 teams in the HPCC4 Cyber Defense Competition (October 2026) --- Defended live systems using SIEM tools, firewall management, network hardening, and incident response in Linux environments.}
+\end{itemize}
+
+% ---------- Projects ----------
+\section{Projects}
+\noindent
+\projectHeading{Multi-threaded TCP Chat Server}{}
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+  \resumeItem{Built a client-server chat application using Java sockets where each client is handled on its own thread and a broadcast mechanism is used to relay messages between users. Implemented a server side command parser which supports commands such as /nick, /msg, /list, /help, and /exit. \\} 
+  \href{https://github.com/alecrosenberg/Multi-threaded-TCP-Chat-Server}{\textcolor{blue}{\underline{TCP Chat Server}}}
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\projectHeading{Password Strength Analyzer}{}
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+  \resumeItem{Developed a Java command-line tool that scores passwords from 0--100 based on length, character diversity, and pattern penalties. Integrated the Have I Been Pwned password API using k-anonymity and the first five characters of a SHA-1 hash to check for known data-breach exposure.\\}
+  \href{https://github.com/alecrosenberg/Password-Strength-Analyzer}{\textcolor{blue}{\underline{Password Analyzer}}}
+\end{itemize}
+
+% ---------- Skills ----------
+\section{Skills}
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+  \resumeItem{\textbf{Languages:} Java, C, Python}
+  \resumeItem{\textbf{Networking \& Security:} Network Traffic Analysis, TCP/IP Networking, Firewall Management}
+  \resumeItem{\textbf{Systems \& Development:} Linux System Administration (Ubuntu), Bash Scripting, Git}
+  \resumeItem{\textbf{Monitoring:} Linux User Monitoring, Process Monitoring}
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+  \resumeItem{\textbf{CompTIA Security+:} \textit{In Progress, Expected November 2026}}
+\end{itemize}
+
+\end{document}
